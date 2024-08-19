@@ -1,1 +1,13 @@
-spring.application.name=state_machine
+spring:
+  application:
+    name: state_machine
+
+  datasource:
+    url: jdbc:h2:mem:local
+    #url: jdbc:h2:file:/data/demo jdbc:h2:file:./test
+    username: sa
+    password: 123
+    driverClassName: org.h2.Driver
+  h2:
+    console.enabled: true
+
