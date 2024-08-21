@@ -51,7 +51,7 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
             @Override
             public void execute(StateContext<States, Events> context) {
                 logger.info(" ");
-                logger.info("action1");
+                logger.info("confirm");
                 logger.info("Source ...: {}", context.getSource().getId());
 
 //                if (context.getSource().getId() == States.SI)
@@ -71,7 +71,7 @@ public class StateMachineConfig extends EnumStateMachineConfigurerAdapter<States
             @Override
             public void execute(StateContext<States, Events> context) {
                 logger.info(" ");
-                logger.info("action2");
+                logger.info("deliver");
                 logger.info("Source ...: {}", context.getSource().getId());
                 logger.info("Target ...: {}", context.getTarget().getId());
                 logger.info(" ");
